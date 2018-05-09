@@ -18,9 +18,9 @@ from sklearn.neighbors import KNeighborsClassifier
 def opencsv():
     # 使用 pandas 打开
     data = pd.read_csv(
-        'datasets/getting-started/digit-recognizer/input/train.csv')
+        'D:\GitHub\kaggle\datasets/getting-started/digit-recognizer/input/train.csv')
     data1 = pd.read_csv(
-        'datasets/getting-started/digit-recognizer/input/test.csv')
+        'D:\GitHub\kaggle\datasets/getting-started/digit-recognizer/input/test.csv')
 
     train_data = data.values[0:, 1:]  # 读入全部训练数据,  [行，列]
     train_label = data.values[0:, 0] # 读取列表的第一列
@@ -70,7 +70,7 @@ def dRecognition_knn():
     # 结果的输出
     saveResult(
         testLabel,
-        'datasets/getting-started/digit-recognizer/output/Result_sklearn_knn.csv'
+        'D:\GitHub\kaggle\datasets/getting-started/digit-recognizer/output/Result_sklearn_knn.csv'
     )
     print("finish!")
     stop_time_r = time.time()
